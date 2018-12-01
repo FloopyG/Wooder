@@ -757,4 +757,10 @@ MAIN BOX 3
     .menuLogoUl{
         left: 10px;
     }
+    .Wabsolute{
+        display: none;
+    }
+    .Fabsolute{
+        display: none;
+    }
 }
