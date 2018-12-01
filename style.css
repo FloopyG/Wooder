@@ -740,6 +740,12 @@ MAIN BOX 3
     .infoTextBox21{
         margin-left: 100px;
     }
+    .Wabsolute{
+         display: none;
+     }
+    .Fabsolute{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -757,10 +763,5 @@ MAIN BOX 3
     .menuLogoUl{
         left: 10px;
     }
-    .Wabsolute{
-        display: none;
-    }
-    .Fabsolute{
-        display: none;
-    }
+
 }
