@@ -1,0 +1,760 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url("fonts/ProximaNovaBold.otf");
+}
+
+header {
+    background: url("img/background.jpg") 50% 50%;
+    max-width: 1944px;
+    height: 1000px;
+    position: relative;
+}
+.all{
+    overflow: hidden;
+}
+
+.headerMenu {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menuButton {
+    max-width: 90px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menuButtonClick {
+    position: relative;
+    height: 22px;
+    width: 34px;
+}
+
+.menuButtonLine1, .menuButtonLine2, .menuButtonLine3 {
+    width: 33px;
+    height: 1px;
+    background-color: #bea67c;
+    position: absolute;
+}
+
+.menuButtonLine1 {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+.menuButtonLine2 {
+    top: 10px;
+}
+
+.menuButtonLine3 {
+    top: 20px;
+    transform: rotate(0deg);
+}
+
+.menuButtonText {
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 15px;
+    color: #a6a5a5;
+    margin-left: 5px;
+    margin-top: 3px;
+
+}
+
+.menuLogo {
+    height: 27px;
+    display: flex;
+}
+
+.menuLogoUl {
+    display: inline-block;
+    opacity: 0;
+    width: 0;
+}
+
+.menuLogoLi {
+    margin-left: 90px;
+    display: inline-block;
+}
+
+.menuLogoLiA {
+    text-decoration: none;
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 15px;
+    color: #a6a5a5;
+}
+
+.menuInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.languageChange {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.menuInfoButton {
+    margin-right: 11px;
+}
+
+.languageChangeRectangle {
+    height: 6px;
+    width: 9px;
+    margin-top: 6px;
+    margin-left: 4px;
+    transform: rotate(0deg);
+    transition: 0.4s;
+}
+
+.activeRectangle {
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+
+.languageChangeText {
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 15px;
+    color: #a6a5a5;
+}
+
+.languageChangeText2 {
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 15px;
+    color: #a6a5a5;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.activeLanguage {
+    top: 20px;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.headerBlockSlider {
+    padding-top: 245px;
+}
+
+.headerSlider {
+    max-width: 1190px;
+    margin: auto;
+}
+
+.headerSliderSlide {
+    max-width: 1190px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.headerSliderSlidePLine {
+    display: inline-block;
+    width: 51px;
+    height: 4px;
+    background-color: #c0af91;
+    margin-bottom: 15px;
+}
+
+.headerSliderSlideP1 {
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 52px;
+    color: #c0af91;
+    transform: rotate(90deg);
+    height: 50px;
+    margin-top: 60px;
+}
+
+.headerSliderSlideBox {
+    max-width: 540px;
+}
+
+.headerSliderSlideBoxP1 {
+    font-size: 100px;
+    font-family: ProximaNovaBold, sans-serif;
+    color: #bea67c;
+}
+
+.headerSliderSlideP2 {
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 14px;
+    color: #bea67c;
+    transform: rotate(90deg);
+    opacity: 0.3;
+    height: 18px;
+    margin-top: 87px;
+}
+
+.sliderButton {
+    display: block;
+    margin-top: 65px;
+    height: 58px;
+    width: 306px;
+    border: 2px solid white;
+    text-decoration: none;
+    padding-top: 18px;
+    padding-left: 84px;
+    box-sizing: border-box;
+}
+
+.sliderButtonText {
+    color: white;
+    font-size: 14px;
+    font-family: ProximaNovaBold, sans-serif;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
+.mouse {
+    display: block;
+    margin-top: 68px;
+}
+
+.strelka {
+    display: block;
+    margin-top: 23px;
+    margin-left: 4px;
+}
+
+.headerSliderSlideBoxP2 {
+    transform: rotate(90deg);
+    font-family: ProximaNovaBold, sans-serif;
+    color: white;
+    font-size: 8px;
+    opacity: 0.3;
+    margin-left: -16px;
+    display: block;
+    width: 52px;
+    margin-top: 40px;
+}
+
+.bottomLine {
+    vertical-align: bottom;
+    width: 54.7%;
+    background-color: white;
+    height: 42px;
+    margin-top: 167px;
+}
+
+.Wabsolute, .Fabsolute {
+    font-size: 395px;
+    opacity: 0.1;
+    font-family: ProximaNovaBold, sans-serif;
+    color: #a9946e;
+
+    position: absolute;
+}
+
+.Wabsolute {
+    top: 250px;
+    right: 0;
+}
+
+.Fabsolute {
+    bottom: -200px;
+    left: 360px;
+}
+
+.line2 {
+    height: 51px;
+    width: 4px;
+    position: absolute;
+    right: 360px;
+    bottom: -25px;
+    background-color: #a9946e;
+}
+
+.shareImg {
+    position: absolute;
+    bottom: 22px;
+    right: 33px;
+}
+
+
+/*
+
+
+MAIN PART
+
+
+*/
+
+
+main {
+    overflow: hidden;
+}
+
+.mainInfoBox {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    position: relative;
+}
+
+.mainInfoBox:nth-child(2) {
+    flex-wrap: wrap;
+    margin-top: 275px;
+}
+
+.mainInfoBoxDiv {
+    max-width: 525px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoTextBox {
+    max-width: 340px;
+    margin-left: 37px;
+}
+
+.infoTextBox2 {
+    max-width: 340px;
+    margin-right: 37px;
+    text-align: right;
+}
+
+.ssilkaLine2 {
+    height: 2px;
+    width: 44px;
+    background-color: #a9946e;
+    margin-top: 5px;
+    margin-left: 185px;
+}
+
+.infoTextBoxP1 {
+    font-size: 48px;
+    color: black;
+    font-family: ProximaNovaBold, sans-serif;
+}
+
+.infoTextBoxP2 {
+    font-size: 15px;
+    font-family: ProximaNovaBold, sans-serif;
+    color: #464646;
+    margin-top: 35px;
+}
+
+.infoTextBoxA1 {
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family: ProximaNovaBold, sans-serif;
+}
+
+.ssilkaImg {
+    margin-left: 5px;
+}
+
+.ssilkaLine {
+    height: 2px;
+    width: 44px;
+    background-color: #a9946e;
+    margin-top: 5px;
+}
+
+.infoLineBox {
+    padding-top: 20px;
+    position: relative;
+}
+
+.infoLine1 {
+    width: 150px;
+    height: 1px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.infoLine2 {
+    width: 44px;
+    height: 4px;
+    background-color: #a9946e;
+    margin-top: 55px;
+}
+
+.infoLine1:nth-child(2), .infoLine2:nth-child(2) {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.infoLineP {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    font-size: 36px;
+    color: black;
+    font-family: ProximaNovaBold, sans-serif;
+}
+
+.dot {
+    color: #a9946e;
+}
+
+.underLine {
+    width: 4px;
+    height: 52px;
+    background-color: #a9946e;
+    position: absolute;
+    bottom: -100px;
+    left: 45px;
+}
+
+.mainInfoBoxP, .mainInfoBoxP2 {
+    font-size: 170px;
+    font-family: ProximaNovaBold, sans-serif;
+    color: #d0d0d0;
+    top: 30%;
+    left: 60%;
+    position: absolute;
+    opacity: 0.3;
+    cursor: default;
+}
+
+.mainInfoBoxP2 {
+    left: -20%;
+}
+
+
+
+#video1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.videoBlock {
+    text-align: center;
+    position: relative;
+    height: 240px;
+    width: 240px;
+    overflow: hidden;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+
+.fullVideo {
+    width: 100%;
+    height: 100%;
+}
+.videos{
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto 0;
+    flex-wrap: wrap;
+}
+.lineVideo{
+    width: 25px;
+    height: 1px;
+    background-color: #a9946e;
+    margin: 30px auto 0;
+}
+.mainVideoBlock{
+    max-width: 259px;
+    position: relative;
+}
+.mainVideoBlock:after{
+    content: "";
+    border: 1px solid #e3e3e3;
+    height: 257px;
+    width: 259px;
+    position: absolute;
+    top: -9px;
+    left: -10px;
+    border-radius: 100%;
+ }
+.textVideo{
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px auto 0;
+}
+.mainBoxP1{
+    text-align: center;
+    font-size: 48px;
+    font-family: ProximaNovaBold, sans-serif;
+    color: black;
+    margin-top: 200px;
+}
+.mainBoxLine{
+    height: 4px;
+    width: 44px;
+    margin: 30px auto 0;
+    background-color: #a9946e;
+}
+.mainBoxP2{
+    max-width: 545px;
+    color: #a6a5a5;
+    font-size: 15px;
+    text-align: center;
+    margin: 25px  auto 0;
+    font-family: ProximaNovaBold, sans-serif;
+}
+/*
+
+
+
+
+MAIN BOX 3
+
+
+
+
+*/
+.mainBox3{
+    background: url("img/background2.jpg");
+    padding: 90px 180px ;
+    box-sizing: border-box;
+    margin-top: 160px;
+}
+.mainBox3Block{
+    max-width: 1560px;
+    max-height: 740px;
+    border: 1px solid #bea67c;
+    padding-left: 155px;
+    padding-top: 210px;
+    padding-bottom: 180px;
+    padding-right: 110px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mainBox3Block1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 690px;
+}
+.mainLineBox{
+    max-width: 150px;
+    padding-top: 27px;
+}
+.mainBoxLine1{
+    width: 150px;
+    height: 1px;
+    background-color: white;
+}
+.mainBoxLine2{
+    width: 44px;
+    height: 4px;
+    background-color: #a9946e;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 130px;
+}
+.mainBox3BlockP{
+    max-width: 515px;
+    margin-left: 25px;
+}
+.mainBox3BlockP1{
+    color: #a9946e;
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 48px;
+}
+.mainBox3BlockP2{
+    color: white;
+    margin-top: 37px;
+    max-width: 400px;
+    font-family: ProximaNovaBold, sans-serif;
+    font-size: 15px;
+}
+.mainButton {
+    display: block;
+    margin-top: 65px;
+    height: 58px;
+    width: 306px;
+    border: 2px solid white;
+    text-decoration: none;
+    padding-top: 18px;
+    padding-left: 84px;
+    box-sizing: border-box;
+}
+.mainBox3BlockLine{
+    width: 1px;
+    height: 152px;
+    background-color: white;
+    margin-top: 80px;
+}
+.infoLine21{
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 80px;
+    width: 44px;
+    height: 4px;
+    background-color: #a9946e;
+}
+.infoTextBox21{
+    max-width: 340px;
+    margin-right: 37px;
+}
+.infoLineBox2{
+    position: absolute;
+    top: 70px;
+    left: 47%;
+}
+.mainInfoBoxDiv2{
+    padding-top: 51px;
+}
+.mainInfoBox2{
+    position: relative;
+    max-width: 1040px;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+.ssilkaLine3{
+    height: 2px;
+    width: 44px;
+    background-color: #a9946e;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1320px) {
+    .mainLineBox{
+        display: none;
+    }
+    .mainBox3BlockLine{
+        display: none;
+    }
+    .mainInfoBox{
+        max-width: 525px;
+    }
+    .mainInfoBox2{
+        max-width: 525px;
+        flex-wrap: wrap;
+    }
+    .infoLineBox2{
+        display: none;
+    }
+    .mainBox3Block{
+        padding: 100px 0;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .menuLogoUl{
+        width: 90px;
+        position: absolute;
+        left: 67px;
+        top: 50px;
+    }
+    .menuLogoLi{
+        display: block;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .line2{
+        display: none;
+    }
+    .videos{
+        max-width: 260px;
+    }
+    .mainVideoBlock{
+        margin-top: 70px;
+    }
+    .mainBox3Block{
+        border: none;
+    }
+    .mainBox3{
+        padding: 0;
+    }
+    .mainBox3Block1{
+        max-width: 480px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 700px){
+    .headerBlockSlider{
+        max-width: 540px;
+    }
+    .headerSliderSlide{
+        max-width: 540px;
+    }
+    .headerSliderSlideP2{
+        display: none;
+    }
+    .headerSliderSlideBoxP1{
+        font-size: 60px;
+    }
+    .bottomLine{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .headerBlockSlider{
+        max-width: 340px;
+        margin: auto;
+    }
+    .headerSliderSlide{
+        max-width: 340px;
+    }
+    .headerSliderSlideBoxP1{
+        font-size: 40px;
+    }
+    .furnitureImg{
+        max-width: 300px;
+        margin: auto;
+    }
+    .infoLineBox{
+        display: none;
+    }
+    .infoTextBoxP1{
+        font-size: 30px;
+    }
+    .infoTextBoxP2{
+        font-size: 12px;
+    }
+    .infoTextBoxA1{
+        font-size: 12px;
+    }
+    .mainInfoBoxDiv{
+        margin-left: 50px;
+    }
+    .infoTextBox21{
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .menuInfo {
+        display: none;
+    }
+    .mainButton{
+        padding-left: 70px;
+        max-width: 280px;
+    }
+    .headerMenu{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .menuLogoUl{
+        left: 10px;
+    }
+}
