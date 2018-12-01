@@ -763,5 +763,10 @@ MAIN BOX 3
     .menuLogoUl{
         left: 10px;
     }
-
+    .mainInfoBoxDiv{
+        margin-left: 0;
+    }
+    .infoTextBox{
+        margin-left: 10px;
+    }
 }
