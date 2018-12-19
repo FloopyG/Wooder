@@ -76,7 +76,7 @@ header {
 }
 
 .menuLogoUl {
-    display: inline-block;
+    display: none;
     opacity: 0;
     width: 0;
 }
@@ -91,6 +91,7 @@ header {
     font-family: ProximaNovaBold, sans-serif;
     font-size: 15px;
     color: #a6a5a5;
+    width: 0;
 }
 
 .menuInfo {

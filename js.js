@@ -15,11 +15,17 @@ $('.menuButton').click(function () {
             opacity: 0
         }, 300);
         $('.menuLogoUl').animate({
-            display: 'inline-block'
-        }, 300).animate({
-            width: '500px',
+            width: '520px',
             opacity: 1
-        }, 400);
+        }, 400).css({
+            display: 'inline-block'
+        }
+        );
+        $('.menuLogoLiA').animate({
+            width: '80px'
+        }, 400).css({
+            cursor: 'pointer'
+        });
         $('.menuButton').addClass('ready').removeClass('noReady');
     } else if ($(this).hasClass('ready')) {
         $('.menuButtonLine1').transition({
@@ -39,9 +45,12 @@ $('.menuButton').click(function () {
         $('.menuLogoUl').animate({
             width: '0',
             opacity: 0
-        }, 400).animate({
-            display: 'none'
-        }, 300);
+        }, 400);
+        $('.menuLogoLiA').animate({
+            width: '0'
+        }, 400).css({
+            cursor: 'default'
+        });
         $('.menuButton').addClass('noReady').removeClass('ready');
     }
 });
